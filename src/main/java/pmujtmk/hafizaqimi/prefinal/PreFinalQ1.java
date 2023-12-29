@@ -13,10 +13,10 @@ public class PreFinalQ1 {
     //Title
     JFrame f;
     JLabel lbl_title;
-    JPanel pnl_title, pnl_north;
+    JPanel pnl_title;
     
     //Content
-    JPanel pnl_center, pnl_content;
+    JPanel pnl_content;
     //comp 1
     JPanel pnl_1;
     JLabel lbl_1;
@@ -165,18 +165,18 @@ public class PreFinalQ1 {
         pnl_10.add(txta_10);
         
         //Content add components
-        pnl_center = new JPanel();
-        pnl_center.setLayout(new BoxLayout(pnl_center, BoxLayout.Y_AXIS));
-        pnl_center.add(pnl_1);
-        pnl_center.add(pnl_2);
-        pnl_center.add(pnl_3);
-        pnl_center.add(pnl_4);
-        pnl_center.add(pnl_5);
-        pnl_center.add(pnl_6);
-        pnl_center.add(pnl_7);
-        pnl_center.add(pnl_8);
-        pnl_center.add(pnl_9);
-        pnl_center.add(pnl_10);
+        pnl_content = new JPanel();
+        pnl_content.setLayout(new BoxLayout(pnl_content, BoxLayout.Y_AXIS));
+        pnl_content.add(pnl_1);
+        pnl_content.add(pnl_2);
+        pnl_content.add(pnl_3);
+        pnl_content.add(pnl_4);
+        pnl_content.add(pnl_5);
+        pnl_content.add(pnl_6);
+        pnl_content.add(pnl_7);
+        pnl_content.add(pnl_8);
+        pnl_content.add(pnl_9);
+        pnl_content.add(pnl_10);
         
         //Button: West
         btn_submit = new JButton("Submit");
@@ -186,7 +186,7 @@ public class PreFinalQ1 {
         
         //Frame Add Components
         f.add(pnl_title, BorderLayout.NORTH);
-        f.add(pnl_center, BorderLayout.CENTER);
+        f.add(pnl_content, BorderLayout.CENTER);
         f.add(pnl_submit, BorderLayout.SOUTH);
         
         f.pack();
